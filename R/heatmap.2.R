@@ -65,6 +65,7 @@ heatmap.2 <- function (x,
                        ## color key + density info
                        key = TRUE,
                        keysize = 1.5,
+                       key.cex.main = 1,
                        density.info=c("histogram","density","none"),
                        denscol=tracecol,
                        symkey = any(x < 0, na.rm=TRUE) || symbreaks,
@@ -716,7 +717,7 @@ heatmap.2 <- function (x,
           if (is.null(key.title))
               key.title <- "Color Key\nand Density Plot"
           if (!is.na(key.title))
-            title(key.title, cex.main=0.5)
+            title(key.title, cex.main=key.cex.main)
           par(cex=0.5)
           if (is.null(key.ylab))
               key.ylab <- "Density"
@@ -739,7 +740,7 @@ heatmap.2 <- function (x,
           if (is.null(key.title))
               key.title <- "Color Key\nand Histogram"
           if (!is.na(key.title))
-            title(key.title, cex.main=0.5)
+            title(key.title, cex.main=key.cex.main)
           par(cex=0.5)
           if (is.null(key.ylab))
               key.ylab <- "Count"
@@ -750,7 +751,7 @@ heatmap.2 <- function (x,
           if (is.null(key.title))
               title("Color Key")
           else
-              title(key.title, cex.main=0.5)
+              title(key.title, cex.main=key.cex.main)
 
       if(trace %in% c("both","column") )
           {
