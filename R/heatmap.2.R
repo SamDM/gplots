@@ -716,7 +716,7 @@ heatmap.2 <- function (x,
           if (is.null(key.title))
               key.title <- "Color Key\nand Density Plot"
           if (!is.na(key.title))
-            title(key.title)
+            title(key.title, cex.main=0.5)
           par(cex=0.5)
           if (is.null(key.ylab))
               key.ylab <- "Density"
@@ -739,7 +739,7 @@ heatmap.2 <- function (x,
           if (is.null(key.title))
               key.title <- "Color Key\nand Histogram"
           if (!is.na(key.title))
-            title(key.title)
+            title(key.title, cex.main=0.5)
           par(cex=0.5)
           if (is.null(key.ylab))
               key.ylab <- "Count"
