@@ -650,7 +650,7 @@ heatmap.2 <- function (x,
       if (!is.null(key.xlab) && is.na(key.xlab))
           mar[1] <- 2
       if (!is.null(key.ylab) && is.na(key.ylab))
-          mar[2] <- 0
+          mar[2] <- 0.5
       if (!is.null(key.title) && is.na(key.title))
           mar[3] <- 1
       par(mar = mar, cex=0.75, mgp=c(2, 1, 0))
