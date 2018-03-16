@@ -646,11 +646,11 @@ heatmap.2 <- function (x,
   ## Add the color-key
   if(key)
     {
-      mar <- c(5, 4, 2, 1)
+      mar <- c(5, 4, 2, 0)
       if (!is.null(key.xlab) && is.na(key.xlab))
           mar[1] <- 2
       if (!is.null(key.ylab) && is.na(key.ylab))
-          mar[2] <- 2
+          mar[2] <- 0
       if (!is.null(key.title) && is.na(key.title))
           mar[3] <- 1
       par(mar = mar, cex=0.75, mgp=c(2, 1, 0))
