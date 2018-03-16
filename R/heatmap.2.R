@@ -749,6 +749,8 @@ heatmap.2 <- function (x,
       else
           if (is.null(key.title))
               title("Color Key")
+          else
+              title(key.title, cex.main=0.5)
 
       if(trace %in% c("both","column") )
           {
